@@ -1,12 +1,9 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.7.0"
-
     application
+    id("org.jetbrains.kotlin.jvm") version "1.7.0"
 }
 
-repositories {
-    mavenCentral()
-}
+repositories { mavenCentral() }
 
 dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -16,7 +13,4 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
 
-application {
-    // Define the main class for the application.
-    mainClass.set("debut.css.AppKt")
-}
+application { mainClass.set("debut.css.SimpleWebServerKt") }
